@@ -15,7 +15,7 @@ export function Lesson({title, slug, availableAt, type}: LessonProps) {
     const avaliableDateFormat = format(availableAt, "EEEE' • 'd' de 'MMMM' • 'k'h'mm", { locale: ptBR })
 
   return (
-    <S.Wrapper href="#">
+    <S.Wrapper to={`/event/lesson/${slug}`}>
         <S.Date>{avaliableDateFormat}</S.Date>
         <S.Content>
             <S.ContentHeader>
