@@ -17,11 +17,16 @@ export const Content = tw.div`
     p-4
     mt-2
     group-hover:border-green-500
+
+    ${({isActiveLesson} : {isActiveLesson: boolean}) => `
+        ${isActiveLesson && `
+            bg-green-500
+        `}
+    `}
 `
 
 export const ContentHeader = tw.header`
     flex
     items-center
     justify-between
-
 `

@@ -35,7 +35,7 @@ export function Sidebar() {
 
     <S.LessonList>
       {data?.lessons.map(lesson => (
-          <Lesson key={lesson.id} title={lesson.title} availableAt={new Date(lesson.availableAt)} slug={lesson.slug} type={lesson.lessonType} /> 
+          <Lesson key={lesson.id} title={lesson.title} availableAt={new Date(lesson.availableAt)} slugSelected={lesson.slug} type={lesson.lessonType} /> 
       ))}
     </S.LessonList>
   </S.Wrapper>
